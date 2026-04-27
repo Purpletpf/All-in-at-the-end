@@ -1,132 +1,91 @@
 # All-in-at-the-end
+
 Project Overview
+
 Genre: Roguelike / Gambling / Narrative
- Theme: Death, chance, regret
-All In at the End is a narrative-driven roguelike where the player wakes up in a casino run by Death. Instead of gambling money, the player bets pieces of their soul—memories, emotions, and years of their life.
-Each gambling table (slots, poker, roulette, dice) represents a different mechanic. Winning extends your life. Losing permanently alters your character’s personality, dialogue options, abilities, and ending.
-The game blends chance-based systems with permanent narrative consequences.
+Theme: Death, Chance, Regret
 
- Development Log
+All In at the End is a narrative-driven roguelike where the player awakens in a mysterious casino run by Death. Instead of gambling money, the player wagers pieces of their soul—memories, emotions, and even years of their life.
+
+Each gambling table (slots, poker, roulette, and dice) introduces a unique gameplay mechanic. Winning allows the player to survive longer, while losing results in permanent consequences that alter the character’s personality, dialogue options, abilities, and ultimately the ending.
+
+The game blends chance-based systems with meaningful, lasting narrative consequences to create a high-stakes and emotionally engaging experience.
+
+Core Gameplay Loop
+Enter the casino and choose a gambling table
+Bet soul points (resources tied to the player’s existence)
+Win or lose based on risk and probability
+Experience permanent narrative or gameplay consequences
+Continue until reaching an ending (or losing everything)
+Development Log
+
 February 15, 2026
+
 Created GitHub repository
-
-
-Structured Unity folder hierarchy
-
-
+Structured Unity project folder hierarchy
 Drafted full project plan
-
-
 Defined core gameplay loop
-
-
 Established milestone timeline
-
-
- Milestones & Progress
+Milestones & Progress
 Milestone 1 – Core Systems (Week 1–2)
-Casino Scene Setup
-
-
-Basic GameManager
-
-
-Slot Machine Prototype
-
-
-Soul Currency System
-
-
+Casino scene setup
+Basic GameManager implementation
+Slot machine prototype
+Soul currency system
 Milestone 2 – Gambling Systems (Week 3–4)
 Poker mechanic
-
-
 Roulette mechanic
-
-
 Dice table system
-
-
-Risk/Reward balancing
-
-
-Milestone 3 – Narrative System (Week 5–6)
+Risk/reward balancing
+Milestone 3 – Narrative Systems (Week 5–6)
 Dialogue branching system
-
-
 Memory loss mechanic
-
-
 Character alteration system
-
-
 Multiple ending framework
-
-
 Milestone 4 – Polish & UI (Week 7–8)
 UI overhaul
-
-
 Audio design
-
-
 Visual effects
-
-
-Bug fixing & optimization
-
-
-
+Bug fixing and optimization
 Challenges & Solutions
-Challenge: Making gambling feel meaningful rather than random.
- Solution: Tie losses to permanent narrative consequences rather than simple stat decreases.
-Challenge: Balancing fairness vs. emotional tension.
- Solution: Hidden probability adjustments based on player soul state.
 
- Resources & References
+Challenge: Making gambling feel meaningful rather than purely random
+Solution: Implemented permanent narrative consequences tied to losses instead of simple stat reductions
+
+Challenge: Balancing fairness with emotional tension
+Solution: Introduced hidden probability adjustments based on the player’s soul state to create a sense of control while maintaining uncertainty
+
+Technologies & Tools
 Unity Engine
-
-
-GitHub Version Control
-
-
-Trello for project management
-
-
+GitHub (version control)
+Trello (project management)
 Roguelike design research
-
-
 Narrative branching systems
+Team Contributions
 
-
- Team Contributions
 Joshua Villamar
+
 Game Design
-
-
 Narrative Design
-
-
 Core Gameplay Systems
-
-
 Project Management
+Visual Documentation
 
+(To be updated)
 
-
- Visual Documentation
-(Placeholder — Add screenshots once prototype is playable)
-
+Gameplay screenshots
+UI previews
+System demonstrations
 Future Plans
-Add hidden “True Ending”
+Add a hidden “True Ending”
+Implement a final boss gamble against Death
+Develop a New Game+ system
+Prepare for a potential Steam release build
+How to Run the Project
 
+(Update this section based on your actual setup)
 
-Add boss gamble against Death
-
-
-Add New Game+ system
-
-
-Steam release build
-
-
+Clone the repository
+Open the project in Unity
+Load the main scene
+Press Play to start the game
