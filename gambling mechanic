@@ -1,0 +1,49 @@
+using UnityEngine;
+
+public class GambleSystem : MonoBehaviour
+{
+    public int betAmount = 10;
+
+    public void Gamble()
+    {
+        if (GameManager.instance.gameOver) return;
+
+        if (GameManager.instance.soulPoints < betAmount)
+        {
+            Debug.Log("Not enough soul to bet.");
+            return;
+        }
+
+        int roll = Random.Range(0, 100);
+
+        // Adjust difficulty based on current soul (dynamic tension)
+        int winChance = 50;
+
+        if (GameManager.instance.soulPoints < 20)
+            winChance = 65; // comeback help
+        else if (GameManager.instance.soulPoints > 80)
+            winChance = 35; // harder when winning
+
+        if (roll < winChance)
+        {
+            Win();
+        }
+        else
+        {
+            Lose();
+        }
+    }
+
+    void Win()
+    {
+        GameManager.instance.ModifySoul(+10);
+        Debug.Log("You won the gamble.");
+    }
+
+    void Lose()
+    {
+        GameManager.instance.ModifySoul(-10);
+        NarrativeSystem.instance.ApplyConsequence();
+        Debug.Log("You lost the gamble.");
+    }
+}
