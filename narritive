@@ -1,0 +1,34 @@
+using UnityEngine;
+
+public class NarrativeSystem : MonoBehaviour
+{
+    public static NarrativeSystem instance;
+
+    private int corruptionLevel = 0;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
+    public void ApplyConsequence()
+    {
+        corruptionLevel++;
+
+        switch (corruptionLevel)
+        {
+            case 1:
+                Debug.Log("You feel something slipping... a memory fades.");
+                break;
+            case 2:
+                Debug.Log("Your emotions dull. You feel less human.");
+                break;
+            case 3:
+                Debug.Log("You barely recognize yourself anymore.");
+                break;
+            default:
+                Debug.Log("You are no longer who you were.");
+                break;
+        }
+    }
+}
